@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    header, footer{
+        background: green;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    .container {
+        display: flex;
+        min-height: 70vh;
+    }
+    nav{
+        background-color: purple;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        padding: 100px
+        
+    }
+    main{
+        background: violet;
+        flex: 1;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
+        color: white;
+    }
+</style>
+<body>
+    <header>HEADER</header>
+
+    <div class="container">
+        <nav>
+            SIDENAV
+        </nav>
+        <main>
+            MAIN CONTENT
+        </main>
+    </div>
+    <footer>
+        FOOTER
+    </footer>
+</body>
+</html>
