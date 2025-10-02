@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    header{
+        background-color: green;
+        padding: 30px;
+
+    }
+    nav{
+        background-color: yellow;
+        padding: 10px;
+
+    }
+    .container {
+        display: flex;
+        min-height: 70vh;
+    }
+    #main1{
+        background-color: orange;
+        text-align: left;
+        
+        padding: 100px
+        
+    }
+    #main2{
+        background-color: red;
+        flex: 1;
+    }
+    footer{
+        background-color: blue;
+        padding: 10px;
+    }
+    h4{
+        margin-top: -10cqb;
+        margin-left: -90px;
+        text-decoration: none;
+    }
+    li{
+        margin-left: -70px;
+    }
+</style>
+<body>
+    <header>
+        <H1>Learning By Doing</H1>
+        <p>Tutorial belajar membuat layout website sederhana</p>
+    </header>
+    <nav>
+            <a href="">Home</a>
+            <a href="">HTML</a>
+            <a href="">CSS</a>
+            <a href="">PHP</a>
+            <a href="">JavaScript</a>
+    </nav>
+    <div class="container">
+        <main id="main1">
+            <h4>Sidebar</h4>
+            <ul>
+                <li><a href="">Tutorial HTML Dasar</a></li>
+                <li><a href="">Tutorial CSS Dasar</a></li>
+                <li><a href="">Tutorial PHP Dasar</a></li>
+                <li><a href="">Tutorial JQuery Dasar</a></li>
+            </ul>
+        </main>
+        <main id="main2">Content</main>
+
+    </div>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>
