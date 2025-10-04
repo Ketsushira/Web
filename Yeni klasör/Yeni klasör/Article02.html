@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: white;
+        }
+
+        header, footer {
+            background-color: rgb(192, 192, 192);
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 10px; /* Отступ от соседних элементов */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px; /* Отступ между колонками */
+            min-height: 70vh;
+            margin-bottom: 10px; /* Отступ от footer */
+        }
+
+        .sidebar, main {
+            background-color: rgb(192, 192, 192);
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            flex: 2; /* Чтобы центр был шире */
+        }
+
+        footer {
+            background-color: rgb(192, 192, 192);
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h1>Sidebar 1</h1>
+        </div>
+        <main>
+            <h1>Article</h1>
+        </main>
+        <div class="sidebar">
+            <h1>Sidebar 2</h1>
+        </div>
+    </div>
+
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>
