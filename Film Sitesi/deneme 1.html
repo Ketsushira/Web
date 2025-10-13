@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Film Container</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 20px;
+  }
+  .container {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    max-width: 800px;
+    gap: 20px;
+  }
+  .image {
+    flex-shrink: 0;
+    width: 200px;
+  }
+  .image img {
+    width: 100%;
+    border-radius: 6px;
+  }
+  .content {
+    flex-grow: 1;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .description {
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  .details {
+    font-size: 14px;
+    color: #555;
+  }
+  .details span {
+    display: inline-block;
+    margin-right: 15px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="image">
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/66/Haunted_Hotel_poster.png" alt="Haunted Hotel" />
+  </div>
+  <div class="content">
+    <div class="title">Otель с привидениями смотреть онлайн 1 сезон 10 серия</div>
+    <div class="description">
+      Овдовевшая Кэтрин Фрилинг с детьми, застенчивым Беном и странноватой Эстер, наследует от умершего брата Нейтана полуразвалившийся отель и выясняет, что здание буквально напичкано призрачными душами и вечными постояльцами вроде демона Абаддона, заточённого в теле мальчика XVIII века.
+    </div>
+    <div class="details">
+      <span>Название: Haunted Hotel</span>
+      <span>Год: 2025</span>
+      <span>Рейтинги: 7.525</span>
+      <span>Жанр: Ужасы / Комедии</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
