@@ -14,14 +14,34 @@
         </a>
     </header>
     <nav>
-        <a href="/kategori/Aksiyon/aksiyon.html">Aksiyon</a>
-        <a href="/kategori/Drama/drama.html">Drama</a>
-        <a href="/kategori/Komedi/komedi.html">Komedi</a>
-        <a href="/kategori/Gerilim/gerilim.htm">Gerilim</a>
+         <a href="/Film Sitesi/kategori/Aksiyon/aksiyon.html">Aksiyon</a>
+        <a href="/Film Sitesi/kategori/Drama/drama.html">Drama</a>
+        <a href="/Film Sitesi/kategori/Komedi/komedi.html">Komedi</a>
+        <a href="/Film Sitesi/kategori/Gerilim/gerilim.html">Gerilim</a>
+        <button onclick="openLogin()">Giriş Yap</button>
     </nav>
     </nav>
     <main>
         
     </main>
+    <div class="overlay" id="loginOverlay">
+    <div class="login-box">
+      <span class="close-btn" onclick="closeLogin()">&times;</span>
+      <h2>LOGIN</h2>
+      <input type="text" placeholder="Email veya kullanıcı adı" />
+      <input type="password" placeholder="Şifre" />
+      <a href="#" style="color:rgba(255,255,255,0.7);float:right;font-size:12px;">Şifreni mi unuttun?</a>
+    </div>
+  </div>
+
+  <script>
+    function openLogin() {
+      document.getElementById("loginOverlay").style.display = "flex";
+    }
+
+    function closeLogin() {
+      document.getElementById("loginOverlay").style.display = "none";
+    }
+  </script>  
 </body>
 </html>

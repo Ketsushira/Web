@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang=">
-<!--test-->
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,19 +14,20 @@
         </a>
     </header>
     <nav>
-        <a href="/kategori/Aksiyon/aksiyon.html">Aksiyon</a>
-        <a href="/kategori/Drama/drama.html">Drama</a>
-        <a href="/kategori/Komedi/komedi.html">Komedi</a>
-        <a href="/kategori/Gerilim/gerilim.htm">Gerilim</a>
+        <a href="/Film Sitesi/kategori/Aksiyon/aksiyon.html">Aksiyon</a>
+        <a href="/Film Sitesi/kategori/Drama/drama.html">Drama</a>
+        <a href="/Film Sitesi/kategori/Komedi/komedi.html">Komedi</a>
+        <a href="/Film Sitesi/kategori/Gerilim/gerilim.html">Gerilim</a>
+        <button onclick="openLogin()">Giriş Yap</button>
     </nav>
     </nav>
     <main>
         <div class="c">
-            <a href="/kategori/Gerilim/The black Phone.html"><img src="resimler/bp.jpg" alt="The Black Phone"></a>
+            <a href="/Film Sitesi/kategori/Gerilim/The black Phone.html"><img src="resimler/bp.jpg" alt="The Black Phone"></a>
             <p>Siyah Telefon</p>
         </div>
         <div class="c">
-            <img src="resimler/dad.jpg" alt="dump and dumped">
+            <a href="/Film Sitesi/kategori/Komedi/"></a><img src="resimler/dad.jpg" alt="dump and dumped">
             <p>Salak ile Avanak </p>
         </div>
         <div class="c">
@@ -75,6 +75,25 @@
             <p>Muslum</p>
         </div>
     </main>
+    <div class="overlay" id="loginOverlay">
+    <div class="login-box">
+      <span class="close-btn" onclick="closeLogin()">&times;</span>
+      <h2>LOGIN</h2>
+      <input type="text" placeholder="Email veya kullanıcı adı" />
+      <input type="password" placeholder="Şifre" />
+      <a href="#" style="color:rgba(255,255,255,0.7);float:right;font-size:12px;">Şifreni mi unuttun?</a>
+    </div>
+  </div>
+
+  <script>
+    function openLogin() {
+      document.getElementById("loginOverlay").style.display = "flex";
+    }
+
+    function closeLogin() {
+      document.getElementById("loginOverlay").style.display = "none";
+    }
+  </script>      
 </body>
 
 </html>
