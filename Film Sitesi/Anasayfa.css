@@ -2,11 +2,11 @@ body
 {
    margin: 0;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   background-color: #140c30
+   background-color: #140f17
 }
 header
 {
-  background: linear-gradient(to right,#140c30,#168777, #140c30);
+  background: linear-gradient(to right,#480415,#140f17);
    color: #F5F5F5;
    
    padding: 1px; 
@@ -14,7 +14,7 @@ header
 nav{
    display: flex;
    gap: 10px; /* kutular arası boşluk */
-   background-color: #140c30;
+   background-color: #140f17;
    padding: 10px;
    justify-content: center;
     transition: all 0.3s;
@@ -79,6 +79,11 @@ nav button{
      cursor: pointer;
       transition: 0.3s;
       border: none;
+      transition: background-color 0.3s;
+}
+nav button:hover
+{
+   background-color: #153d4c;
 }
 .login-box {
       position: relative;
@@ -126,11 +131,53 @@ nav button{
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
       height: 100%;
+      width: 100%;
       background: rgba(0, 0, 0, 0.5);
       display: none;
       justify-content: center;
       align-items: center;
       z-index: 10;
+    }
+    .box{
+      position:relative;
+      width: 80%;
+      padding: 20px;
+      margin-left: 10%;
+      border-radius: 10px;
+      
+      
+      background-color: #210207;
+    }
+    .box h2{
+      color: #F5F5F5;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    .box p{
+      color: #F5F5F5;
+      font-size: 18px;
+      line-height: 1;
+      
+    }
+    .box iframe{
+      display: block;
+      padding: 50px;
+      width: 80%;
+      height: 650px;
+      margin: auto;
+      border-radius: 10px;
+    }
+
+    .box img{
+      display: flex;
+      width: 300px;
+      height: 450px;
+      border-radius: 10px;
+      
+    }
+    .film_top{
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
     }
