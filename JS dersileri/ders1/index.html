@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex;">
+    <script>
+        function gece() {
+            document.getElementsByTagName("body")[0].style.backgroundColor = "black";
+            document.getElementsByTagName("body")[0].style.color = "white";
+        }
+        function gündüz() {
+            document.getElementsByTagName("body")[0].style.backgroundColor = "white";
+            document.getElementsByTagName("body")[0].style.color = "black";
+        }
+    </script>
+    <button type="button" onclick="gece()">Gece Modu</button>
+    <button type="button" onclick="gündüz()">Gündüz Modu</button>
+    <h1>
+        Butonlar ile renk değiştirme. 
+    </h1>
+</body>
+</html>
