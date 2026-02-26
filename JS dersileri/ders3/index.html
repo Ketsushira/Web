@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function odaklama(){
+          document.getElementById("change").innerHTML = "Odaklandı";
+        }
+        function brakma(){
+          document.getElementById("change").innerHTML = "Kontrol";
+        }
+        function tıkla(){
+          document.getElementById("tıklama").innerHTML = "Tıklandı";
+        }
+        function tıkla1(){
+          document.getElementById("tıklama").innerHTML = "Tıkla";
+        }
+    </script>
+    <style>
+        table{
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #333;
+            border-collapse: collapse;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        thead th{
+            background:#f2f2f2;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        tbody td{
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .position{
+            text-align: center;
+        }
+        .big-btn{
+            font-size: 18px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: 1px solid #555;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .big-btn:hover{
+            background:#0056b3;
+        }
+    </style>
+
+    <table>
+        <thead>
+            <tr>
+                <th>İstek</th>
+                <th>Durum</th>
+                <th>Yapım</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mouse odaklanma</td>
+                <td class="position"><button class="big-btn" id="odak" onmouseover="odaklama()" onmouseout="brakma()">Tıkla</button></td>
+                <td class="position" id="change">Kontrol</td>
+            </tr>
+            <tr>
+                <td>buton tıklama</td>
+                <td class="position"><button class="big-btn" onclick="tıkla()">Tıkla</button></td>
+                <td class="position" id="tıklama">Kontrol</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
