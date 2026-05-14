@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(240, 240, 217);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    margin-top: 200px;
+    color: black;
+    overflow: hidden; /* Kaydırma çubuğunu engellemek için */
+}
+
+/* Animasyon Tanımları */
+@keyframes fadeInUp {
+    from { transform: translate3d(0, 40px, 0); opacity: 0; }
+    to { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+@keyframes fadeOutUp {
+    from { transform: translate3d(0, 0, 0); opacity: 1; }
+    to { transform: translate3d(0, -50px, 0); opacity: 0; }
+}
+
+/* İlk Başlık: 0. saniyede gelir, 2. saniyede gider */
+.fadeInUp {
+    opacity: 0;
+    animation: fadeInUp 1s forwards 0.5s, fadeOutUp 1s forwards 2.5s;
+}
+
+/* Form: 3. saniyede gelir */
+.fadeInUpform {
+    opacity: 0;
+    animation: fadeInUp 1s forwards 3.5s;
+}
+
+/* Çıktı Alanı: Butona basıldığında JS ile aktif edilecek veya direkt görünecek */
+.fadeInUpcikti {
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0; /* Başlangıçta gizli */
+}
+
+/* Butona basılınca JS ile bu class eklenecek */
+.show-result {
+    animation: fadeInUp 1s forwards;
+}
+
+/* FORM STİLLERİ */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
