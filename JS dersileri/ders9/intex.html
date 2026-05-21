@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        td{
+            width: 50px;
+        }
+    </style>
+    <button onclick="ekle" id="btn">
+        Satır Ekle
+    </button>
+    <table border="2" id="tablom">
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>d</td>
+        </tr>
+    </table>
+
+    <script>
+        const buton = document.getElementById("btn");
+        const tabl = document.getElementById("tablom");
+
+        buton.addEventListener("click", function() {
+            const yeniSatir = tabl.insertRow(-1);
+
+            const hucre1 = yeniSatir.insertCell(0);
+            const hucre2 = yeniSatir.insertCell(1);
+            const hucre3 = yeniSatir.insertCell(2);
+
+            hucre1.innerText = "a";
+            hucre2.innerText = "b";
+            hucre3.innerText = "d";
+
+        })
+    </script>
+</body>
+</html>

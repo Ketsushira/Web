@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo Göster</title>
+    <style>
+        /* Başlangıçta tüm tabloyu gizliyoruz */
+        .gizli-tablo {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="tbl-btn" id="TblBtn">
+        Tablo Göster
+    </button> 
+    <table border="2" class="gizli-tablo" id="tabloElementi">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <script>
+        
+        const tabl = document.getElementById("tabloElementi");
+        const buton = document.getElementById("TblBtn");
+
+        buton.addEventListener("click", function() {
+            tabl.style.visibility = "visible";
+        });
+    </script>
+</body>
+</html>

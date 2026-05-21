@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgi Formu</title>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <td>Ad</td>
+            <td><input type="text" id="ad"></td>
+        </tr>
+        <tr>
+            <td>Soyad</td>
+            <td><input type="text" id="soyad"></td>
+        </tr>
+        <tr>
+            <td>Yaş</td>
+            <td><input type="text" id="yas"></td>
+        </tr>
+        <tr>
+            <td>Resim Ekle</td>
+            <td><input type="file" id="resim"></td>
+        </tr>
+        <tr>
+            <td>Cinsiyet</td>
+            <td>
+                <input type="radio" name="cinsiyet" value="erkek"> Erkek
+                <input type="radio" name="cinsiyet" value="kadın"> Kadın
+            </td>
+        </tr>
+        <tr>
+            <td>Yabancı Diller</td>
+            <td>
+                <input type="checkbox" name="yabanci_diller" value="ingilizce"> İngilizce
+                <input type="checkbox" name="yabanci_diller" value="fransızca"> Fransızca
+                <input type="checkbox" name="yabanci_diller" value="Japonca"> Japonca
+            </td>
+        </tr>
+        <tr>
+            <td>Görüş</td>
+            <td><input type="text" name="gorus" style="height: 30px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button id="kaydet-btn" type="button">Kaydet</button>
+                <button id="sifirla-btn" type="button">Sıfırla</button>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <div>
+        <label id="ad-label"></label><br>
+        <label id="soyad-label"></label><br>
+        <label id="yas-label"></label>
+    </div>
+
+    <script>
+        function kaydet() {
+            var adElement = document.getElementById('ad');
+            var soyadElement = document.getElementById('soyad');
+            var yasElement = document.getElementById('yas');
+            var adLabel = document.getElementById('ad-label');
+            var soyadLabel = document.getElementById('soyad-label');
+            var yasLabel = document.getElementById('yas-label');
+
+            if (!adElement || !soyadElement || !yasElement || !adLabel || !soyadLabel || !yasLabel) {
+                console.warn('Kaydet işlemi için gerekli alanlar bulunamadı.');
+                return;
+            }
+
+            adLabel.textContent = 'Ad: ' + adElement.value;
+            soyadLabel.textContent = 'Soyad: ' + soyadElement.value;
+            yasLabel.textContent = 'Yaş: ' + yasElement.value;
+        }
+
+        function sifirla() {
+            var adElement = document.getElementById('ad');
+            var soyadElement = document.getElementById('soyad');
+            var yasElement = document.getElementById('yas');
+            var adLabel = document.getElementById('ad-label');
+            var soyadLabel = document.getElementById('soyad-label');
+            var yasLabel = document.getElementById('yas-label');
+
+            if (!adElement || !soyadElement || !yasElement || !adLabel || !soyadLabel || !yasLabel) {
+                console.warn('Sıfırlama işlemi için gerekli alanlar bulunamadı.');
+                return;
+            }
+
+            adElement.value = '';
+            soyadElement.value = '';
+            yasElement.value = '';
+            adLabel.textContent = '';
+            soyadLabel.textContent = '';
+            yasLabel.textContent = '';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var kaydetBtn = document.getElementById('kaydet-btn');
+            var sifirlaBtn = document.getElementById('sifirla-btn');
+
+            if (kaydetBtn) {
+                kaydetBtn.addEventListener('click', kaydet);
+            }
+
+            if (sifirlaBtn) {
+                sifirlaBtn.addEventListener('click', sifirla);
+            }
+        });
+    </script>
+</body>
+</html>
