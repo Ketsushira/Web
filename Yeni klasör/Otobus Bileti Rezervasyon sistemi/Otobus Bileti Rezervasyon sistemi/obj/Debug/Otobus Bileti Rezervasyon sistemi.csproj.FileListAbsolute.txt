@@ -1,0 +1,11 @@
+C:\Users\öğrenci\source\repos\Otobus Bileti Rezervasyon sistemi\Otobus Bileti Rezervasyon sistemi\bin\Debug\Otobus Bileti Rezervasyon sistemi.exe.config
+C:\Users\öğrenci\source\repos\Otobus Bileti Rezervasyon sistemi\Otobus Bileti Rezervasyon sistemi\bin\Debug\Otobus Bileti Rezervasyon sistemi.exe
+C:\Users\öğrenci\source\repos\Otobus Bileti Rezervasyon sistemi\Otobus Bileti Rezervasyon sistemi\bin\Debug\Otobus Bileti Rezervasyon sistemi.pdb
+C:\Users\öğrenci\source\repos\Otobus Bileti Rezervasyon sistemi\Otobus Bileti Rezervasyon sistemi\obj\Debug\Otobus Bileti Rezervasyon sistemi.csprojAssemblyReference.cache
+C:\Users\öğrenci\source\repos\Otobus Bileti Rezervasyon sistemi\Otobus Bileti Rezervasyon sistemi\obj\Debug\Otobus_Bileti_Rezervasyon_sistemi.Form1.resources
+C:\Users\öğrenci\source\repos\Otobus Bileti Rezervasyon sistemi\Otobus Bileti Rezervasyon sistemi\obj\Debug\Otobus_Bileti_Rezervasyon_sistemi.Properties.Resources.resources
+C:\Users\öğrenci\source\repos\Otobus Bileti Rezervasyon sistemi\Otobus Bileti Rezervasyon sistemi\obj\Debug\Otobus Bileti Rezervasyon sistemi.csproj.GenerateResource.cache
+C:\Users\öğrenci\source\repos\Otobus Bileti Rezervasyon sistemi\Otobus Bileti Rezervasyon sistemi\obj\Debug\Otobus Bileti Rezervasyon sistemi.exe
+C:\Users\öğrenci\source\repos\Otobus Bileti Rezervasyon sistemi\Otobus Bileti Rezervasyon sistemi\obj\Debug\Otobus Bileti Rezervasyon sistemi.pdb
+C:\Users\öğrenci\source\repos\Otobus Bileti Rezervasyon sistemi\Otobus Bileti Rezervasyon sistemi\bin\Debug\Guna.UI2.dll
+C:\Users\öğrenci\source\repos\Otobus Bileti Rezervasyon sistemi\Otobus Bileti Rezervasyon sistemi\obj\Debug\Otobus Bileti Rezervasyon sistemi.csproj.CopyComplete
